@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
+  
+  <style>
+  body {
+    background-color: white;
+  }
+  </style>
+
+  <body>
+      <script src="../src/index.js"></script>
+
+    <img class = 'image' src='download.jpg '>
+
+    <div id = "header" className = "header">  
+      <h1 align="center" style = "font-family:Arial, Helvetica, sans-serif">Order-Tracking Application: MTD Products</h1>
+      <div id = "searchbox" align = "center"></div>
+      <div id = "orderNum" align = "center"></div>
+      <div id = "mobileInfo" align = "center"></div>
+      <div id = 'epcotCheck' align = "center"></div>
+      <br>
+      <div id = "processing" align="center"></div>
+    </div>
+
+    <div id = "pizzatracker" className = "pizza">
+      <div id = "tracker" align="center" class="prg"></div>
+      <br>
+      <br>
+      <div id = "trackerLabels" align="center" class="prglbl"></div>
+    </div>
+
+    <!--Div holds tabs, order data, etc.-->
+    <div class = "data">
+      <div id="orderData" class = "orderData"></div>
+    </div>
+
+
+  </body>
+</html>

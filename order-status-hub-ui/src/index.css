@@ -1,0 +1,352 @@
+/*
+  NOTE: If you want to revert to vertical progress tracker UI for regular desktop, follow the steps below:
+  1. Uncomment .prg, .prglbl, .prglbl
+  2. Add 'transform: 270deg' line to the '.indexedStep' CSS block
+  Mobile/Tablet/Smaller than desktop still utilizes vertical progress tracker 
+*/
+
+select {
+    width: 100px;
+    overflow: hidden;
+    white-space: pre;
+    text-overflow: ellipsis;
+    -webkit-appearance: none;
+  }
+  
+  option {
+    border: solid 1px #DDDDDD;
+  }
+  
+  .orderData {
+    bottom: 1000px; 
+    transform-origin: 50% 50%;
+  }
+  
+  .indexedStep {
+    color: white;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background-color: rgba(197, 13, 13, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .indexedStep.accomplished {
+    background-color: rgb(33, 167, 84);
+  }
+  
+  .tabName {
+    color: rgba(197, 13, 13, 0.8);
+    outline-color: #aaa;
+  }
+  
+  .tabName.accomplished {
+    color: rgb(33, 167, 84);
+    outline-color: #aaa;
+  } 
+  
+  
+  /* .prg {
+    position: relative;
+    transform: rotate(90deg);
+    float: right;
+    bottom: -1200px;
+    transform-origin: 80% 10%;
+  } */
+  
+  .prgText {
+    transform: rotate(180deg);
+  }
+  
+  /* .prglbl {
+    position: relative;
+    bottom: -986px;
+    transform: rotate(90deg);
+    transform-origin: 70% 500%;
+    float: right;
+  } */
+  
+  /* .labelText {
+    transform: rotate(270deg);
+  } */
+  
+  .unfilledBackground {
+    color: white;
+  }
+  
+  .image {
+    display: block;
+    margin: auto;
+  }
+  
+  .input {
+    width: 200px;
+  }
+  
+  
+  .button {
+    margin-left: 10px;
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 2.6px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.5s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  
+  
+  @media screen and (min-width: 800px) {
+  
+  .tabList {
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #aaa;
+    width: auto;
+    text-align: center;
+  }
+  
+  .tabData {
+    justify-content: center;
+    display: flex;
+  }
+  }
+  
+  /* Sizing and Adjustments for 1024px laptops*/
+  @media screen and (max-width: 1025px) and (min-width: 800px) {
+  
+      .orderData {
+      position: relative;
+      bottom: -700px;
+    }
+  
+    .dataTracks {
+      margin: 200 auto;
+    }
+  
+    .prg {
+      position: relative;
+      transform: rotate(90deg);
+      float: right;
+      bottom: -830px;
+      transform-origin: 62% 10%;
+      text-align: center;
+    }
+  
+    .prglbl {
+      position: relative;
+      transform: rotate(90deg);
+      float: right;
+      bottom: -875px;
+      transform-origin: 68% 10%;
+      text-align: center;
+    }
+  
+    .indexedStep {
+      transform: rotate(270deg);
+    }
+  
+    .labelText {
+      transform: rotate(270deg);
+    }
+  
+  }
+  
+  
+  
+  @media screen and (max-width: 500px) {
+    
+  .button {
+    bottom: -10px;
+    margin-left: 0px;
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 2.6px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+    .orderData {
+      position: relative;
+      bottom: -700px;
+    }
+  
+    .dataTracks {
+      margin: 200 auto;
+    }
+  
+    .prg {
+      position: relative;
+      transform: rotate(90deg);
+      float: right;
+      bottom: -1200px;
+      transform-origin: 89% 10%;
+      text-align: center;
+    }
+  
+    .prglbl {
+      position: relative;
+      transform: rotate(90deg);
+      float: right;
+      bottom: -1088px;
+      transform-origin: 83% 10%;
+      text-align: center;
+    }
+  
+    
+    .indexedStep {
+      transform: rotate(270deg);
+    }
+  
+    .labelText {
+      transform: rotate(270deg);
+    }
+  
+  }
+  
+  /* This sizing for Mobile L (425 px) is messed up for the loading bar */
+  @media screen and (max-width: 430px) and (min-width: 420px) {
+  
+    .button {
+      bottom: -40px;
+      margin-left: -202px;
+      position: relative;
+      background-color: #4CAF50;
+      border: none;
+      font-size: 15px;
+      color: #FFFFFF;
+      padding: 2.6px;
+      width: 200px;
+      text-align: center;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+  
+    .loading {
+      bottom: 100px;
+      padding: -1000px;
+    }
+  
+    .orderData {
+      position: relative;
+      bottom: -700px;
+    }
+  
+    .head {
+      position: relative;
+      bottom: -30px;
+    }
+  
+    .mobile {
+      position: relative;
+      bottom: -30px;
+    }
+  
+    
+    .indexedStep {
+      transform: rotate(270deg);
+    }
+  
+    .labelText {
+      transform: rotate(270deg);
+    }
+  
+  }
+  
+  @media screen and (max-width: 800px) and (min-width: 450px) {
+    .orderData {
+      position: relative;
+      bottom: -700px;
+    }
+  
+    .dataTracks {
+      margin: 200 auto;
+    }
+  
+    .prg {
+      position: relative;
+      transform: rotate(90deg);
+      float: right;
+      bottom: -950px;
+      transform-origin: 71% 10%;
+      text-align: center;
+    }
+  
+    .prglbl {
+      position: relative;
+      transform: rotate(90deg);
+      float: right;
+      bottom: -994px;
+      transform-origin: 77% 10%;
+      text-align: center;
+    }
+  
+    .indexedStep {
+      transform: rotate(270deg);
+    }
+  
+    .labelText {
+      transform: rotate(270deg);
+    }
+  }
