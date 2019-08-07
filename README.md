@@ -26,6 +26,7 @@ Current build makes use of Node.js, React.js, MsSQL, and Oracle. Specific npm mo
 npm module 'axios' is currently used to make the backend asyncrhonous AJAX request.
 
 # Contribute
-TODO: Implement Unit Testing (see above). Make Error Handling far more robust in the backend. Rework UI as needed, alter data formatting.
+TODO: Implement Unit Testing via Selenium. Make Error Handling far more robust in the backend. Rework UI as needed, alter data formatting.
 
 Author: Peter Koncelik
+Last Commit: August 2019
