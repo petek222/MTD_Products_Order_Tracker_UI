@@ -1,5 +1,5 @@
 # Introduction 
-Order-Status Hub Application User Interface. Built in React.js, backended by a Node.js / SQL Server order service application.
+Order-Status Hub Application User Interface. Built in React.js, backended by a Node.js and Azure SQL / Oracle Db order service application.
 
 The UI currently accepts an order number and runs the backend application asynchronously, returning the data in a formatted, tabbed layout.
 This tab structure can be added to and re-styled to fit needs. A progress bar/pizza tracker is displayed in correspondance with data.
