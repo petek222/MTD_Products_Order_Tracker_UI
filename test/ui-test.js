@@ -1,1 +1,1 @@
-console.log('Test Dummy File');ß
+console.log('Test Dummy File');
