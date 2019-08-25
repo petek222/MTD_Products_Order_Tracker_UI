@@ -1,3 +1,5 @@
+build:passed
+
 # Introduction 
 Order-Status Hub Application User Interface. Built in React.js, backended by a Node.js and Azure SQL / Oracle Db order service application.
 
