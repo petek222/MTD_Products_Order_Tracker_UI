@@ -27,17 +27,17 @@ import parseOrderInfo from './parsers/orderInfoParser';
 
 import "react-tabs/style/react-tabs.css";
 import "./index.css";
-import indexedStep from './index.css';
-import unfilledBackground from './index.css';
-import upbar from './index.css'
-import labelText from './index.css'
-import ftpdata from './index.css'
-import orderData from './index.css'
-import button from './index.css'
-import input from './index.css'
-import loading from './index.css'
-import head from './index.css'
-import mobile from './index.css'
+// import indexedStep from './index.css';
+// import unfilledBackground from './index.css';
+// import upbar from './index.css'
+// import labelText from './index.css'
+// import ftpdata from './index.css'
+// import orderData from './index.css'
+// import button from './index.css'
+// import input from './index.css'
+// import loading from './index.css'
+// import head from './index.css'
+// import mobile from './index.css'
 
 // ***********************************
 
@@ -331,12 +331,6 @@ const Status = () => (
       <ReactLoading type={'cubes'} color="#2FA54D" />
   </div>
 );
-
-function timeoutFunction() {
-  alert('MTD Order Lookup Application has timed out. Please check the server or try again');
-  resetDOM();
-}
-
 
 // Helper function removes all DOM components upon subsequent lookups 
 function resetDOM() {
