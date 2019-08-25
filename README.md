@@ -1,4 +1,4 @@
-https://travis-ci.com/petek222/MTD_Products_Order_Tracker_UI.svg?branch=master
+[![Build Status](https://travis-ci.com/petek222/MTD_Products_Order_Tracker_UI.svg?branch=master)](https://travis-ci.com/petek222/MTD_Products_Order_Tracker_UI)
 
 # Introduction 
 Order-Status Hub Application User Interface. Built in React.js, backended by a Node.js and Azure SQL / Oracle Db order service application.
