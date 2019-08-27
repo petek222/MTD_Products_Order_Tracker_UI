@@ -25,7 +25,7 @@ UI is currently a fully-functional build, calling the Node.js backend via an AJA
 # Build and Test
 Version 1.0.0
 Current build makes use of Node.js, React.js, MsSQL, and Oracle. Specific npm modules used are specified in its corresponding directory.
-npm module 'axios' is currently used to make the backend asyncrhonous AJAX request.
+npm module 'axios' is currently used to make the backend asynchronous AJAX request.
 
 # Contribute
 TODO: Implement Unit Testing via Selenium. Make Error Handling far more robust in the backend. Rework UI as needed, alter data formatting.
