@@ -20,7 +20,7 @@ UI is currently a fully-functional build, calling the Node.js backend via an AJA
  6. With both services running, enter an order number in the searchbox and click 'Process'.
  7. Loading bar will display, and will change into formatted data once complete, along with progress tracker. Color-coordinated.
 
- Note that the process may take a bit to complete, as it is talking to nearly every service present within the E-commerce order process (save for Commerce Cloud)
+ Note that the process may take a bit to complete, as it is talking to nearly every service present within the E-commerce order process (save for SFCC)
 
 # Build and Test
 Version 1.0.0
